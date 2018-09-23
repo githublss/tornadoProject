@@ -31,3 +31,5 @@ image_code_text string
     "error":0,
     "errmsg":"ok"
 }
+
+3.登陆验证

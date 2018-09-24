@@ -11,7 +11,7 @@ import redis
 from tornado.options import options,define
 from tornado.web import RequestHandler
 from urls import urls
-define('port', default=8002, type=int, help='run server on the given port')
+define('port', default=8000, type=int, help='run server on the given port')
 
 class Application(tornado.web.Application):
     def __init__(self, *args, **kwargs):

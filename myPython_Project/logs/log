@@ -164,3 +164,52 @@
 [I 180916 16:59:53 web:2063] 304 GET /register.html (::1) 2.00ms
 [E 180916 16:59:56 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
 [I 180916 16:59:56 web:2063] 200 GET /api/piccode?pre=&cur=45adfbbb-0d00-4807-b332-7d32e52fc030 (::1) 2016.00ms
+[I 180924 19:40:47 web:2063] 200 GET /register.html (::1) 788.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/css/reset.css (::1) 4.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/css/ihome/main.css (::1) 26.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/css/ihome/register.css (::1) 69.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/js/jquery.min.js (::1) 47.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/images/logo@128x59.png (::1) 2.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/js/ihome/register.js (::1) 29.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (::1) 40.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 72.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (::1) 53.00ms
+[I 180924 19:40:47 web:2063] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (::1) 27.00ms
+[E 180924 19:40:50 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
+[I 180924 19:40:50 web:2063] 200 GET /api/piccode?pre=&cur=917c9f97-0e80-4a08-b524-8c29d3b994f6 (::1) 2504.00ms
+[I 180924 19:40:50 web:2063] 200 GET /favicon.ico (::1) 32.00ms
+[I 180924 19:41:06 web:2063] 200 GET /login.html (::1) 59.00ms
+[I 180924 19:41:06 web:2063] 200 GET /static/css/ihome/login.css (::1) 29.00ms
+[I 180924 19:41:07 web:2063] 200 GET /static/js/ihome/login.js (::1) 107.00ms
+[E 180924 19:41:25 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
+[I 180924 19:41:25 web:2063] 200 GET /api/piccode?pre=&cur=f65e0d5e-7f46-475f-a8aa-4cb22594706e (::1) 2029.00ms
+[I 180924 19:42:04 web:2063] 200 GET /my.html (::1) 60.00ms
+[I 180924 19:42:04 web:2063] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (::1) 59.00ms
+[I 180924 19:42:04 web:2063] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (::1) 35.00ms
+[I 180924 19:42:04 web:2063] 200 GET /static/css/ihome/my.css (::1) 43.00ms
+[I 180924 19:42:04 web:2063] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (::1) 84.00ms
+[I 180924 19:42:04 web:2063] 200 GET /static/js/ihome/my.js (::1) 47.00ms
+[W 180924 19:42:04 web:2063] 404 GET /api/profile (::1) 104.00ms
+[I 180924 19:42:17 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (::1) 148.00ms
+[I 180924 19:42:29 web:2063] 200 GET / (::1) 19.00ms
+[I 180924 19:42:29 web:2063] 200 GET /static/plugins/swiper/css/swiper.min.css (::1) 16.00ms
+[I 180924 19:42:29 web:2063] 200 GET /static/js/template.js (::1) 10.00ms
+[I 180924 19:42:29 web:2063] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (::1) 64.00ms
+[I 180924 19:42:29 web:2063] 200 GET /static/css/ihome/index.css (::1) 64.00ms
+[I 180924 19:42:29 web:2063] 200 GET /static/js/ihome/index.js (::1) 2.00ms
+[W 180924 19:42:29 web:2063] 404 GET /api/house/index (::1) 2.00ms
+[W 180924 19:42:29 web:2063] 404 GET /api/check_login (::1) 1.00ms
+[W 180924 19:42:30 web:2063] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.00ms
+[W 180924 19:42:44 web:2063] 404 GET /search (::1) 1.00ms
+[I 180924 19:42:53 web:2063] 200 GET /search.html (::1) 292.00ms
+[I 180924 19:42:53 web:2063] 200 GET /static/css/ihome/search.css (::1) 54.00ms
+[I 180924 19:42:53 web:2063] 200 GET /static/js/ihome/search.js (::1) 53.00ms
+[W 180924 19:42:53 web:2063] 404 GET /api/house/area (::1) 1.00ms
+[W 180924 19:42:59 web:2063] 404 GET /api/check_login (::1) 2.00ms
+[W 180924 19:42:59 web:2063] 404 GET /api/house/index (::1) 2.00ms
+[W 180924 19:42:59 web:2063] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.00ms
+[E 180924 19:43:12 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
+[I 180924 19:43:12 web:2063] 200 GET /api/piccode?pre=&cur=b5161193-d872-465e-b9e1-833357a3d367 (::1) 2069.00ms
+[E 180924 19:43:17 VerifyCode:25] Error 10061 connecting to 127.0.0.1:6379. .
+[E 180924 19:43:19 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
+[I 180924 19:43:19 web:2063] 200 GET /api/piccode?pre=b5161193-d872-465e-b9e1-833357a3d367&cur=d384b45d-d4cd-41e6-b379-031f8ea37072 (::1) 4016.00ms

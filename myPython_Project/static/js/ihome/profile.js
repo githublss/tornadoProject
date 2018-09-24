@@ -34,7 +34,7 @@ $(document).ready(function () {
             headers: {
                 "X-XSRFTOKEN": getCookie("_xsrf")
             },
-            success: function (data) {
+            success: function (data) {      //data是拦截下来的后台返回数据
                 if ("0" == data.errcode) {
                     $('.image_uploading').fadeOut('fast');
                     $("#user-avatar").attr("src", data.data)

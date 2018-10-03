@@ -22,9 +22,9 @@ class RegisterHandler(BaseHandler):
     def post(self):
         # 获取参数
         mobile = self.json_args.get("mobile")
-        sms_code = self.json_args.get("photocode")
+        sms_code = self.json_args.get("phonecode")
         password = self.json_args.get("password")
-
+        print mobile,sms_code,password
         # 参数的检验
         if not all((mobile,sms_code,password)):
             return self.write(dict(errcode=RET.PARAMERR, errmsg="参数不完整"))
@@ -57,7 +57,8 @@ class RegisterHandler(BaseHandler):
 
         # 保存数据，同时判断手机号是否存在，
         passwd = hashlib.sha256(password + config.passwd_hash_key,).hexdigest()     # 没有明白--------------
-        sql = "insert into ih_user_profile(up_name, up_mobile, up_passwd) value(%(name)s, %(mobile)s, %(passed)s);"
+        sql = "insert into ih_user_profile(up_name, up_mobile, up_passwd) value(%(name)s, %(mobile)s, %(passwd)s);"
+        print mobile,passwd
         try:
             user_id = self.db.execute(sql,name=mobile,mobile=mobile, passwd=passwd)
         except Exception as e:
@@ -88,7 +89,7 @@ class LoginHandler(BaseHandler):
             return self.write(dict(errcode=RET.DATAERR, errmsg="手机号错误"))
 
         # 检查密码是否正确
-        res = self.db.get("select up_user_id,upname,up_passwd from ih_user_profile where up_mobile=%(mobile)s",
+        res = self.db.get("select up_user_id,up_name,up_passwd from ih_user_profile where up_mobile=%(mobile)s",
                           mobile=mobile)
         password = hashlib.sha256(password + config.passwd_hash_key).hexdigest()
         if res and res["up_passwd"] == unicode(password):
@@ -109,7 +110,8 @@ class CheckLoginHandler(BaseHandler):
     def get(self):
         # get_current_user方法在基类中已实现，它的返回值是session.data（用户保存在redis中
         # 的session数据），如果为{} ，意味着用户未登录;否则，代表用户已登录
+        print self.get_current_user()
         if self.get_current_user():
-            self.write({"errcode":RET.Ok, "errmsg":"true", "data":{"name":self.session.data.get("name")}})
+            self.write({"errcode":RET.OK, "errmsg":"true", "data":{"name":self.session.data.get("name")}})
         else:
             self.write({"errcode":RET.SESSIONERR,"errmsg":"false"})

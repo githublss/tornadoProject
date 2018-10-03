@@ -36,6 +36,7 @@ class BaseHandler(RequestHandler):
     def get_current_user(self):
         """判断用户是否登陆"""
         self.session = Session(self)
+        self.session.sava()
         return self.session.data
 
 class StaticFileBaseHandler(StaticFileHandler):

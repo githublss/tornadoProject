@@ -1,215 +1,26 @@
-[I 180913 15:20:34 autoreload:198] E:\lss\Tornado _Project\handlers\VerifyCode.py modified; restarting server
-[E 180913 15:20:51 web:1590] Uncaught exception POST /api/smscode (::1)
-    HTTPServerRequest(protocol='http', host='localhost:8002', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Content-Length': '111', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8002', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': '105f24e2-f238-6efd-e64a-207f4c99c872'})
-    Traceback (most recent call last):
-      File "E:\Program\Anaconda2\lib\site-packages\tornado\web.py", line 1509, in _execute
-        result = method(*self.path_args, **self.path_kwargs)
-    TypeError: 'NoneType' object is not callable
-[E 180913 15:20:51 web:2063] 500 POST /api/smscode (::1) 124.00ms
-[I 180913 15:21:50 autoreload:198] E:\lss\Tornado _Project\handlers\VerifyCode.py modified; restarting server
-[I 180913 15:22:01 web:2063] 200 POST /api/smscode (::1) 2.00ms
-[I 180913 15:22:02 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:22:30 web:2063] 304 GET /register.html (::1) 513.00ms
-[I 180913 15:22:31 web:2063] 200 GET /api/piccode?pre=&cur=7d52bac1-e155-4269-9ca7-710c4ef1aa60 (::1) 247.00ms
-[I 180913 15:22:31 web:2063] 304 GET /register.html (::1) 1.00ms
-[I 180913 15:22:31 web:2063] 200 GET /api/piccode?pre=&cur=7ee32e28-ac60-4709-8069-7ed490e8ac4a (::1) 8.00ms
-[I 180913 15:22:34 web:2063] 200 GET /api/piccode?pre=7ee32e28-ac60-4709-8069-7ed490e8ac4a&cur=96dfd249-a5d0-4ff3-8889-5b1efe7e2487 (::1) 9.00ms
-[I 180913 15:22:58 web:2063] 200 GET /api/piccode?pre=96dfd249-a5d0-4ff3-8889-5b1efe7e2487&cur=b89b7a8e-95c9-4d6f-b9dc-ea59acda4cdf (::1) 9.00ms
-[I 180913 15:23:25 web:2063] 200 POST /api/smscode (::1) 2.00ms
-[I 180913 15:23:27 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:23:27 web:2063] 200 POST /api/smscode (::1) 0.00ms
-[I 180913 15:24:57 web:2063] 200 POST /api/smscode (::1) 0.00ms
-[I 180913 15:25:14 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:25:15 web:2063] 200 POST /api/smscode (::1) 2.00ms
-[I 180913 15:26:25 web:2063] 200 POST /api/smscode (::1) 5.00ms
-[I 180913 15:26:35 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:26:52 web:2063] 304 GET /register.html (::1) 700.00ms
-[I 180913 15:26:53 web:2063] 200 GET /api/piccode?pre=&cur=0d968e9a-f485-44a5-a3f0-c8cc9ea30658 (::1) 25.00ms
-[I 180913 15:27:24 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:30:49 web:2063] 200 POST /api/smscode (::1) 3.00ms
-[I 180913 15:31:02 web:2063] 200 POST /api/smscode (::1) 0.00ms
-[I 180913 15:31:27 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:31:51 web:2063] 200 GET /api/piccode?pre=0d968e9a-f485-44a5-a3f0-c8cc9ea30658&cur=9bb92d60-697b-4897-9530-3b1bde8ded0d (::1) 24.00ms
-[I 180913 15:32:16 web:2063] 200 POST /api/smscode (::1) 0.00ms
-[I 180913 15:32:23 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[E 180913 15:32:32 VerifyCode:142] global name 'SMS_CODE_EXPIRES_SECONDS' is not defined
-[I 180913 15:32:32 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[E 180913 15:32:35 VerifyCode:142] global name 'SMS_CODE_EXPIRES_SECONDS' is not defined
-[I 180913 15:32:35 web:2063] 200 POST /api/smscode (::1) 2.00ms
-[E 180913 15:32:37 VerifyCode:142] global name 'SMS_CODE_EXPIRES_SECONDS' is not defined
-[I 180913 15:32:37 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:33:56 web:2063] 200 POST /api/smscode (::1) 11543.00ms
-[I 180913 15:34:21 web:2063] 200 POST /api/smscode (::1) 11235.00ms
-[I 180913 15:35:56 autoreload:198] E:\lss\Tornado _Project\handlers\VerifyCode.py modified; restarting server
-[I 180913 15:36:54 autoreload:198] E:\lss\Tornado _Project\handlers\VerifyCode.py modified; restarting server
-[I 180913 15:36:59 web:2063] 200 POST /api/smscode (::1) 2.00ms
-[I 180913 15:37:20 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:37:21 web:2063] 200 POST /api/smscode (::1) 2.00ms
-[I 180913 15:37:29 web:2063] 200 GET /api/piccode?pre=9bb92d60-697b-4897-9530-3b1bde8ded0d&cur=d8d56df1-98a4-4ca4-90b4-e508260750c4 (::1) 21.00ms
-[I 180913 15:37:34 web:2063] 200 GET /api/piccode?pre=d8d56df1-98a4-4ca4-90b4-e508260750c4&cur=9393f542-45e1-481c-8e25-023ede7ff724 (::1) 9.00ms
-[I 180913 15:38:12 web:2063] 200 POST /api/smscode (::1) 11256.00ms
-[I 180913 15:38:49 autoreload:198] E:\lss\Tornado _Project\handlers\VerifyCode.py modified; restarting server
-[I 180913 15:39:16 web:2063] 200 GET /api/piccode?pre=9393f542-45e1-481c-8e25-023ede7ff724&cur=24173b19-4694-4394-bef4-61e4884799ca (::1) 52.00ms
-[I 180913 15:39:17 web:2063] 200 GET /api/piccode?pre=24173b19-4694-4394-bef4-61e4884799ca&cur=280548eb-8f11-4dda-a6aa-5b8d2d235b55 (::1) 7.00ms
-[I 180913 15:39:44 autoreload:198] E:\lss\Tornado _Project\handlers\VerifyCode.py modified; restarting server
-[I 180913 15:39:57 web:2063] 200 POST /api/smscode (::1) 2.00ms
-[I 180913 15:39:58 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 15:40:22 autoreload:198] E:\lss\Tornado _Project\handlers\VerifyCode.py modified; restarting server
-[I 180913 15:41:01 autoreload:198] E:/lss/Tornado _Project/server.py modified; restarting server
-[I 180913 15:41:08 autoreload:198] E:/lss/Tornado _Project/server.py modified; restarting server
-[I 180913 15:41:15 web:2063] 200 GET /api/piccode?pre=&cur=92320613-1f82-4da8-bcf9-3723cc919bdb (::1) 23.00ms
-[I 180913 15:41:23 web:2063] 200 GET /api/piccode?pre=92320613-1f82-4da8-bcf9-3723cc919bdb&cur=7cc6d4e4-fe71-4cd4-b6bb-7e1187182615 (::1) 37.00ms
-[I 180913 15:41:42 web:2063] 200 GET /api/piccode?pre=7cc6d4e4-fe71-4cd4-b6bb-7e1187182615&cur=7a4177e8-9002-4f60-8250-4d1c8a7506cc (::1) 8.00ms
-[I 180913 15:41:42 web:2063] 200 GET /api/piccode?pre=7a4177e8-9002-4f60-8250-4d1c8a7506cc&cur=2258d8a1-c141-4a7c-bb32-23ccecb42506 (::1) 8.00ms
-[I 180913 15:41:44 web:2063] 304 GET /register.html (::1) 527.00ms
-[I 180913 15:41:44 web:2063] 200 GET /api/piccode?pre=&cur=2540be5d-451b-4a76-99c5-59d8eb7a5be4 (::1) 7.00ms
-[I 180913 15:43:19 web:2063] 200 GET /api/piccode?pre=2540be5d-451b-4a76-99c5-59d8eb7a5be4&cur=b35fd656-607e-4a2d-b68d-f7c7a4a994d0 (::1) 9.00ms
-[I 180913 15:44:14 web:2063] 200 POST /api/smscode (::1) 11314.00ms
-[I 180913 16:16:08 web:2063] 200 POST /api/smscode (::1) 2.00ms
-[I 180913 16:16:16 web:2063] 200 GET /api/piccode?pre=b35fd656-607e-4a2d-b68d-f7c7a4a994d0&cur=b51ca94e-a9b9-4503-bbd5-98f2e71b3b12 (::1) 23.00ms
-[I 180913 16:16:19 web:2063] 200 GET /api/piccode?pre=b51ca94e-a9b9-4503-bbd5-98f2e71b3b12&cur=d5e3a2c3-0990-4d61-a932-fe596208f94e (::1) 10.00ms
-[I 180913 16:17:25 web:2063] 200 POST /api/smscode (::1) 11414.00ms
-[I 180913 16:21:59 web:2063] 304 GET /register.html (::1) 535.00ms
-[I 180913 16:22:00 web:2063] 200 GET /api/piccode?pre=&cur=12170551-27bb-44bd-b1ce-2f61a7a82290 (::1) 7.00ms
-[I 180913 16:22:13 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 16:22:22 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[I 180913 16:22:25 web:2063] 200 GET /api/piccode?pre=12170551-27bb-44bd-b1ce-2f61a7a82290&cur=bc3f1a0e-37fe-4b83-a700-d5a0bb8b9c37 (::1) 9.00ms
-[I 180913 16:22:34 web:2063] 200 POST /api/smscode (::1) 1.00ms
-[W 180913 16:29:48 web:2063] 404 GET /api/check_login (::1) 4.00ms
-[W 180913 16:29:48 web:2063] 404 GET /api/house/index (::1) 1.00ms
-[I 180913 16:29:55 web:2063] 200 GET /api/piccode?pre=&cur=2f431e66-2a05-439e-99e4-33a291456cb2 (::1) 21.00ms
-[I 180913 16:30:21 web:2063] 200 POST /api/smscode (::1) 11376.00ms
-[I 180915 17:28:10 web:2063] 200 GET /register.html (::1) 1314.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (::1) 27.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/images/logo@128x59.png (::1) 18.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/css/ihome/register.css (::1) 37.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/css/ihome/main.css (::1) 1.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/css/reset.css (::1) 1.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 45.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/js/jquery.min.js (::1) 23.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (::1) 40.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (::1) 4.00ms
-[I 180915 17:28:11 web:2063] 200 GET /static/js/ihome/register.js (::1) 3.00ms
-[E 180915 17:28:14 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180915 17:28:14 web:2063] 200 GET /api/piccode?pre=&cur=1ae1de92-a051-463a-8dfb-73e4a7bf6f97 (::1) 2846.00ms
-[I 180915 17:28:51 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (::1) 38.00ms
-[I 180915 17:29:03 web:2063] 304 GET /register.html (::1) 2.00ms
-[I 180915 17:29:03 web:2063] 304 GET /static/js/ihome/register.js (::1) 1.00ms
-[E 180915 17:29:05 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180915 17:29:05 web:2063] 200 GET /api/piccode?pre=&cur=6f1fe4fe-977d-48eb-8b84-accf640ceb5e (::1) 2013.00ms
-[I 180915 17:30:06 web:2063] 304 GET /register.html (::1) 2.00ms
-[I 180915 17:30:06 web:2063] 304 GET /static/js/ihome/register.js (::1) 1.00ms
-[E 180915 17:30:08 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180915 17:30:08 web:2063] 200 GET /api/piccode?pre=&cur=d4c5d125-f4e0-4c22-9527-1f869dd0dfd9 (::1) 2013.00ms
-[I 180916 11:03:47 web:2063] 200 GET /register.html (::1) 503.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/js/jquery.min.js (::1) 215.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (::1) 24.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/css/ihome/main.css (::1) 1.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/css/reset.css (::1) 2.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/css/ihome/register.css (::1) 50.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 10.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/images/logo@128x59.png (::1) 16.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/js/ihome/register.js (::1) 18.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (::1) 23.00ms
-[I 180916 11:03:47 web:2063] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (::1) 4.00ms
-[E 180916 11:03:50 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 11:03:50 web:2063] 200 GET /api/piccode?pre=&cur=5dcb0e6a-38a4-4021-ad43-5e5ec483c080 (::1) 2689.00ms
-[I 180916 11:03:52 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (::1) 101.00ms
-[E 180916 11:04:12 VerifyCode:25] Error 10061 connecting to 127.0.0.1:6379. .
-[E 180916 11:04:14 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 11:04:14 web:2063] 200 GET /api/piccode?pre=5dcb0e6a-38a4-4021-ad43-5e5ec483c080&cur=b8d6f211-125d-4571-9d63-ca150e825666 (::1) 4023.00ms
-[E 180916 11:04:21 VerifyCode:25] Error 10061 connecting to 127.0.0.1:6379. .
-[E 180916 11:04:23 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 11:04:23 web:2063] 200 GET /api/piccode?pre=b8d6f211-125d-4571-9d63-ca150e825666&cur=856f2325-b8b7-42d0-9de6-e7b5cacac767 (::1) 4014.00ms
-[E 180916 11:04:26 VerifyCode:25] Error 10061 connecting to 127.0.0.1:6379. .
-[E 180916 11:04:28 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 11:04:28 web:2063] 200 GET /api/piccode?pre=856f2325-b8b7-42d0-9de6-e7b5cacac767&cur=30fc4c29-c30d-4c9a-bda8-ddc2042ef139 (::1) 4020.00ms
-[E 180916 11:04:30 VerifyCode:25] Error 10061 connecting to 127.0.0.1:6379. .
-[E 180916 11:04:32 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 11:04:32 web:2063] 200 GET /api/piccode?pre=30fc4c29-c30d-4c9a-bda8-ddc2042ef139&cur=a04d54b7-7b35-436b-a4aa-0a8329d91910 (::1) 4027.00ms
-[I 180916 11:04:32 web:2063] 304 GET /register.html (::1) 15.00ms
-[E 180916 11:04:34 VerifyCode:25] Error 10061 connecting to 127.0.0.1:6379. .
-[E 180916 11:04:36 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 11:04:36 web:2063] 200 GET /api/piccode?pre=a04d54b7-7b35-436b-a4aa-0a8329d91910&cur=f5c3641a-a96f-40e2-8729-0a22216fd2cf (::1) 4165.00ms
-[E 180916 11:04:38 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 11:04:38 web:2063] 200 GET /api/piccode?pre=&cur=d88eed57-e5fd-4381-8dc8-e39f43b42e08 (::1) 2016.00ms
-[I 180916 16:55:47 web:2063] 200 GET /register.html (::1) 1028.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 196.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/js/jquery.min.js (::1) 73.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (::1) 19.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/css/reset.css (::1) 3.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/css/ihome/main.css (::1) 12.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/css/ihome/register.css (::1) 20.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (::1) 38.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (::1) 9.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/js/ihome/register.js (::1) 17.00ms
-[I 180916 16:55:47 web:2063] 200 GET /static/images/logo@128x59.png (::1) 43.00ms
-[E 180916 16:55:50 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 16:55:50 web:2063] 200 GET /api/piccode?pre=&cur=b4a53254-3099-47f5-9108-5ebb6f00df05 (::1) 2886.00ms
-[I 180916 16:56:22 web:2063] 200 GET /register.html (::1) 2.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 2.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (::1) 1.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/css/reset.css (::1) 1.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/css/ihome/main.css (::1) 1.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/css/ihome/register.css (::1) 3.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/images/logo@128x59.png (::1) 3.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/js/jquery.min.js (::1) 2.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (::1) 1.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/js/ihome/register.js (::1) 1.00ms
-[I 180916 16:56:22 web:2063] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (::1) 2.00ms
-[E 180916 16:56:24 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 16:56:24 web:2063] 200 GET /api/piccode?pre=&cur=c25ec26d-facc-4150-90c6-ca652848276c (::1) 2014.00ms
-[I 180916 16:56:25 web:2063] 200 GET /favicon.ico (::1) 35.00ms
-[I 180916 16:56:47 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (::1) 62.00ms
-[I 180916 16:59:53 web:2063] 304 GET /register.html (::1) 2.00ms
-[E 180916 16:59:56 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180916 16:59:56 web:2063] 200 GET /api/piccode?pre=&cur=45adfbbb-0d00-4807-b332-7d32e52fc030 (::1) 2016.00ms
-[I 180924 19:40:47 web:2063] 200 GET /register.html (::1) 788.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/css/reset.css (::1) 4.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/css/ihome/main.css (::1) 26.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/css/ihome/register.css (::1) 69.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/js/jquery.min.js (::1) 47.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/images/logo@128x59.png (::1) 2.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/js/ihome/register.js (::1) 29.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (::1) 40.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (::1) 72.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (::1) 53.00ms
-[I 180924 19:40:47 web:2063] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (::1) 27.00ms
-[E 180924 19:40:50 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180924 19:40:50 web:2063] 200 GET /api/piccode?pre=&cur=917c9f97-0e80-4a08-b524-8c29d3b994f6 (::1) 2504.00ms
-[I 180924 19:40:50 web:2063] 200 GET /favicon.ico (::1) 32.00ms
-[I 180924 19:41:06 web:2063] 200 GET /login.html (::1) 59.00ms
-[I 180924 19:41:06 web:2063] 200 GET /static/css/ihome/login.css (::1) 29.00ms
-[I 180924 19:41:07 web:2063] 200 GET /static/js/ihome/login.js (::1) 107.00ms
-[E 180924 19:41:25 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180924 19:41:25 web:2063] 200 GET /api/piccode?pre=&cur=f65e0d5e-7f46-475f-a8aa-4cb22594706e (::1) 2029.00ms
-[I 180924 19:42:04 web:2063] 200 GET /my.html (::1) 60.00ms
-[I 180924 19:42:04 web:2063] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (::1) 59.00ms
-[I 180924 19:42:04 web:2063] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (::1) 35.00ms
-[I 180924 19:42:04 web:2063] 200 GET /static/css/ihome/my.css (::1) 43.00ms
-[I 180924 19:42:04 web:2063] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (::1) 84.00ms
-[I 180924 19:42:04 web:2063] 200 GET /static/js/ihome/my.js (::1) 47.00ms
-[W 180924 19:42:04 web:2063] 404 GET /api/profile (::1) 104.00ms
-[I 180924 19:42:17 web:2063] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (::1) 148.00ms
-[I 180924 19:42:29 web:2063] 200 GET / (::1) 19.00ms
-[I 180924 19:42:29 web:2063] 200 GET /static/plugins/swiper/css/swiper.min.css (::1) 16.00ms
-[I 180924 19:42:29 web:2063] 200 GET /static/js/template.js (::1) 10.00ms
-[I 180924 19:42:29 web:2063] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (::1) 64.00ms
-[I 180924 19:42:29 web:2063] 200 GET /static/css/ihome/index.css (::1) 64.00ms
-[I 180924 19:42:29 web:2063] 200 GET /static/js/ihome/index.js (::1) 2.00ms
-[W 180924 19:42:29 web:2063] 404 GET /api/house/index (::1) 2.00ms
-[W 180924 19:42:29 web:2063] 404 GET /api/check_login (::1) 1.00ms
-[W 180924 19:42:30 web:2063] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.00ms
-[W 180924 19:42:44 web:2063] 404 GET /search (::1) 1.00ms
-[I 180924 19:42:53 web:2063] 200 GET /search.html (::1) 292.00ms
-[I 180924 19:42:53 web:2063] 200 GET /static/css/ihome/search.css (::1) 54.00ms
-[I 180924 19:42:53 web:2063] 200 GET /static/js/ihome/search.js (::1) 53.00ms
-[W 180924 19:42:53 web:2063] 404 GET /api/house/area (::1) 1.00ms
-[W 180924 19:42:59 web:2063] 404 GET /api/check_login (::1) 2.00ms
-[W 180924 19:42:59 web:2063] 404 GET /api/house/index (::1) 2.00ms
-[W 180924 19:42:59 web:2063] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (::1) 2.00ms
-[E 180924 19:43:12 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180924 19:43:12 web:2063] 200 GET /api/piccode?pre=&cur=b5161193-d872-465e-b9e1-833357a3d367 (::1) 2069.00ms
-[E 180924 19:43:17 VerifyCode:25] Error 10061 connecting to 127.0.0.1:6379. .
-[E 180924 19:43:19 VerifyCode:30] Error 10061 connecting to 127.0.0.1:6379. .
-[I 180924 19:43:19 web:2063] 200 GET /api/piccode?pre=b5161193-d872-465e-b9e1-833357a3d367&cur=d384b45d-d4cd-41e6-b379-031f8ea37072 (::1) 4016.00ms
+[D 181002 17:36:03 connectionpool:396] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 181002 17:36:03 web:2063] 200 POST /api/profile/avatar (::1) 1744.00ms
+[D 181002 17:37:27 connectionpool:243] Resetting dropped connection: up-z2.qiniu.com
+[D 181002 17:37:29 connectionpool:396] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 181002 17:37:29 web:2063] 200 POST /api/profile/avatar (::1) 1692.00ms
+[I 181002 17:39:17 web:2063] 304 GET /profile.html (::1) 925.00ms
+[I 181002 17:39:17 web:2063] 304 GET /api/profile (::1) 2.00ms
+[D 181002 17:42:20 connectionpool:243] Resetting dropped connection: up-z2.qiniu.com
+[D 181002 17:42:23 connectionpool:396] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 181002 17:42:23 web:2063] 200 POST /api/profile/avatar (::1) 3443.00ms
+[I 181002 17:43:10 web:2063] 304 GET /profile.html (::1) 2.00ms
+[I 181002 17:43:10 web:2063] 200 GET /api/profile (::1) 4.00ms
+[I 181002 17:44:20 web:2063] 304 GET /profile.html (::1) 1324.00ms
+[I 181002 17:44:20 web:2063] 304 GET /api/profile (::1) 103.00ms
+[D 181002 17:44:26 retry:200] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+[D 181002 17:44:26 connectionpool:208] Starting new HTTP connection (1): up-z2.qiniu.com
+[D 181002 17:44:28 connectionpool:396] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 181002 17:44:28 web:2063] 200 POST /api/profile/avatar (::1) 2073.00ms
+[D 181002 17:45:03 connectionpool:396] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 181002 17:45:03 web:2063] 200 POST /api/profile/avatar (::1) 18022.00ms
+[D 181002 17:45:27 connectionpool:396] http://up-z2.qiniu.com:80 "POST / HTTP/1.1" 200 76
+[I 181002 17:45:27 web:2063] 200 POST /api/profile/avatar (::1) 2862.00ms
+[I 181002 17:45:42 web:2063] 200 GET /my.html (::1) 23.00ms
+[I 181002 17:45:42 web:2063] 200 GET /static/css/ihome/my.css (::1) 5.00ms
+[I 181002 17:45:42 web:2063] 200 GET /static/js/ihome/my.js (::1) 96.00ms
+[I 181002 17:45:42 web:2063] 200 GET /api/profile (::1) 2.00ms

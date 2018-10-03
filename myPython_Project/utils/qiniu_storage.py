@@ -7,8 +7,8 @@ import logging
 from qiniu import Auth, put_data, etag, urlsafe_base64_encode
 
 # 需要填写你的 Access Key 和 Secret Key
-access_key = ''
-secret_key = ''
+access_key = 'jAD3oFvd0qDuhkKUFnpjN9yWiBOcJvpcp4Wp4cnZ'
+secret_key = 'BVue9oWiuWOrNrDd1OkGQGH1ugbJWxjTR7j_TSgy'
 
 def storage(file_data):
     try:
@@ -16,7 +16,7 @@ def storage(file_data):
         q = Auth(access_key, secret_key)
 
         # 要上传的空间
-        bucket_name = 'ihome'
+        bucket_name = 'ourhome'
 
         # 上传到七牛后保存的文件名
         # key = 'my-python-logo.png';
@@ -27,7 +27,7 @@ def storage(file_data):
         #要上传文件的本地路径
         # localfile = './sync/bbb.jpg'
         # ret, info = put_file(token, key, localfile)
-        ret, info = put_data(token, None, file_data)
+        ret, info = put_data(token, None, file_data)    # ret中的key是七牛给文件起的名字
     except Exception as e:
         logging.error(e)
         raise e
@@ -48,4 +48,5 @@ if __name__ == "__main__":
     file_name = raw_input("input file name")
     with open(file_name, "rb") as file:
         file_data = file.read()
-        storage(file_data)
+        name=storage(file_data)
+    print name

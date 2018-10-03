@@ -21,7 +21,7 @@ class Session(object):
         # 如果存在session_id,去redis中取出data
         else:
             try:
-                json_data = request_handler_obj.redis.get("sess_%s",self.session_id)
+                json_data = request_handler_obj.redis.get("sess_%s"% self.session_id)
             except Exception as e:
                 logging.error(e)
                 raise e
@@ -31,9 +31,9 @@ class Session(object):
                 self.data = json.loads(json_data)
 
     def sava(self):
-        json_data = json.dump(self.data)
+        json_data = json.dumps(self.data)
         try:
-            self._request_handler.redis.setex("sess_%s"%self.session_id, SESSION_EXPIRES_SECONDS, json_data)
+            self._request_handler.redis.setex("sess_%s" % self.session_id, SESSION_EXPIRES_SECONDS, json_data)
         except Exception as e:
             logging.error(e)
             raise e

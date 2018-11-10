@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 from BaseHandler import BaseHandler
+from utils.commons import required_login
 from utils.response_code import RET
 from utils.session import Session
 import logging
@@ -104,13 +105,20 @@ class LoginHandler(BaseHandler):
             return self.write(dict(errcode=RET.OK, errmsg="OK"))
         else:
             return self.write(dict(errcode=RET.DATAERR, errmsg="账号或密码错误！"))
-
+class LogoutHandler(BaseHandler):
+    """退出登陆"""
+    @required_login
+    def get(self):
+        # 清除session
+        # session = Session（self）
+        self.session.clear()
+        self.write(dict(errcode=RET.OK, errmsg='退出成功'))
 class CheckLoginHandler(BaseHandler):
     """检查登陆状态"""
     def get(self):
         # get_current_user方法在基类中已实现，它的返回值是session.data（用户保存在redis中
         # 的session数据），如果为{} ，意味着用户未登录;否则，代表用户已登录
-        print self.get_current_user()
+        # print self.get_current_user()
         if self.get_current_user():
             self.write({"errcode":RET.OK, "errmsg":"true", "data":{"name":self.session.data.get("name")}})
         else:

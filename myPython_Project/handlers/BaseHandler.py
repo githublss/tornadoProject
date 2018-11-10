@@ -23,7 +23,8 @@ class BaseHandler(RequestHandler):
             self.json_args = {}
 
     def set_default_headers(self):
-        pass
+        """设置默认json格式"""
+        self.set_header("Content-Type", "application/json; charset=UTF-8")
 
     # def write_error(self, status_code, **kwargs):
     #     pass
